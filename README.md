@@ -1,1 +1,27 @@
 # python-student-marks
+
+# Function to calculate average and percentage
+def AP(m1, m2, m3):
+    tot = m1 + m2 + m3
+    avg = float(tot / 3)
+    per = float((tot / 150) * 100)
+    print("Average=%0.2f Percentage=%0.2f" % (avg, per))
+
+# Main function
+def main():
+    i = int(input("Enter sub1 marks out of 50: "))
+    j = int(input("Enter sub2 marks out of 50: "))
+    k = int(input("Enter sub3 marks out of 50: "))
+    AP(i, j, k)
+
+# Calling main
+main()
+
+
+OUTPUT:
+
+Enter sub1 marks out of 50: 45
+Enter sub2 marks out of 50: 36
+Enter sub3 marks out of 50: 47
+Average=42.66 Percentage=85.33
+
